@@ -1,7 +1,7 @@
-# Powerfit-example
+# Powerfit-examples
 
 This repository contains an example for the [PowerFit](https://github.com/haddocking/powerfit/) package.
-The output of this example was generated using PowerFit release version 5.0.2
+The output of this example was generated using PowerFit release version 5.0.2.
 
 ## Running the example 
 
