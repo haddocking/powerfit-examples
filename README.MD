@@ -5,11 +5,17 @@ The output of this example was generated using PowerFit release version 5.0.2.
 
 ## Running the example 
 
-First download the repository and install PowerFit:
+First download the input files and install PowerFit:
 
 ```shell
-# Clone the example repository
-git clone 
+# Downloads the unput files
+mkdir powerfit-example-data/
+cd powerfit-example-data
+wget https://github.com/haddocking/powerfit-examples/raw/refs/heads/main/3zpz_C.cif.gz
+wget https://github.com/haddocking/powerfit-examples/raw/refs/heads/main/EMD-2325.map.gz
+# Create an environemnt
+python3 -m venv .venv
+.venv/bin/activate # or activate equivalent for your OS/shell
 # Install PowerFit release version 5.0.2
 pip install powerfit-em==5.0.2
 ```
@@ -19,15 +25,15 @@ corresponding cryo-EM density map of the full complex (EMDB entry 2325 - 8.9 Å 
 a rotational sampling interval of 5 degrees.
 
 In this repository you find the following files:
-- `3zpz_C.cif`
-- `EMD-2325.map`
+- `3zpz_C.cif.gz`
+- `EMD-2325.map.gz`
 - `output.zip`
 
 The following command can be used to generate the output present in `output.zip`:
 
 ```shell
 # Run the example
-powerfit EMD-2325.map 8.9 3zpz_C.cif --angle 5 --directory output --report --delimiter , 
+powerfit EMD-2325.map.gz 8.9 3zpz_C.cif.gz --angle 5 --directory output --report --delimiter , 
 ```
 
 Dependent on your system and the amount of CPUs used to run the example, this run might take ~30 minutes
@@ -41,3 +47,4 @@ You can visualize the fits by downloading the output files and opening the resul
 While Powerfit clearly favors one location based on cross correlation score and sigma difference, 
 there is still a major break in sigma difference between the 7 symetric orientations and the 
 next best fit (Fit 8).
+
