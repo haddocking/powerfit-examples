@@ -48,3 +48,8 @@ While Powerfit clearly favors one location based on cross correlation score and 
 there is still a major break in sigma difference between the 7 symetric orientations and the 
 next best fit (Fit 8).
 
+## Platform Support
+
+PowerFit is currently functional on Linux and Mac devices.
+If you want to run it on a Windows device, we recommend installing WSL.
+You could also run this example on our [webservice](https://wenmr.science.uu.nl/powerfit)
