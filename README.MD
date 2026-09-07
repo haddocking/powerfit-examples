@@ -1,7 +1,7 @@
 # Powerfit-examples
 
 This repository contains an example for the [PowerFit](https://github.com/haddocking/powerfit/) package.
-The output of this example was generated using PowerFit release version 5.0.2.
+The output of this example was generated using PowerFit release version 6.0.2.
 
 ## Running the example 
 
@@ -16,8 +16,8 @@ curl -L -o EMD-2325.map.gz https://github.com/haddocking/powerfit-examples/raw/r
 # Create an environment, on Windows use WSL
 python3 -m venv .venv
 .venv/bin/activate # or activate equivalent for your OS/shell
-# Install PowerFit release version 5.0.2
-pip install powerfit-em==5.0.2
+# Install PowerFit release version 6.0.2
+pip install powerfit-em==6.0.2
 ```
 
 In this example chain C of the GroEL/ES chaperonin system (PDB entry 3zpz) was fitted into the 
@@ -50,6 +50,5 @@ next best fit (Fit 8).
 
 ## Platform Support
 
-PowerFit is currently functional on Linux and Mac devices.
-If you want to run it on a Windows device, we recommend installing WSL.
+PowerFit is functional on Windows, Linux, and Mac devices.
 You could also run this example on our [webservice](https://wenmr.science.uu.nl/powerfit)
